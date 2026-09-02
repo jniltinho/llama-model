@@ -32,6 +32,5 @@ jobs:
           generate_release_notes: true
           files: |
             dist/llama-model_*_linux_amd64.tar.gz
-            dist/llama-model_*_linux_arm64.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

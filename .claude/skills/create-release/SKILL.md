@@ -59,8 +59,8 @@ git push origin $NEXT
 The `release.yml` workflow will:
 
 1. Run `make test`
-2. Run `make release-cross` → linux/amd64 and linux/arm64 tarballs
-3. Create the GitHub Release with auto-generated notes and attach both `.tar.gz`
+2. Run `make release-cross` → linux/amd64 tarball
+3. Create the GitHub Release with auto-generated notes and attach the `.tar.gz`
 
 ### 4. Monitor CI and polish notes
 
@@ -87,7 +87,7 @@ gh release view $NEXT
 ```
 
 - Title matches `$NEXT`
-- Two artifacts: `llama-model_X.Y.Z_linux_amd64.tar.gz` and `..._linux_arm64.tar.gz`
+- Artifact: `llama-model_X.Y.Z_linux_amd64.tar.gz`
 - Full Changelog link correct
 
 ---
@@ -97,6 +97,5 @@ gh release view $NEXT
 | Artifact | Status |
 |----------|--------|
 | `linux/amd64` tarball | ✅ |
-| `linux/arm64` tarball | ✅ |
-| darwin/windows | ❌ intentionally — the tool drives systemd and nvidia-smi |
+| other arches/OS | ❌ intentionally — the tool drives systemd and nvidia-smi on amd64 hosts |
 | `.deb`/`.rpm` | ❌ not yet; add a `nfpm` step if needed |
