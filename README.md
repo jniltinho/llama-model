@@ -1,7 +1,7 @@
 # llama-model
 
 [![CI](https://github.com/jniltinho/llama-model/actions/workflows/ci.yml/badge.svg)](https://github.com/jniltinho/llama-model/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/jniltinho/llama-model)](https://github.com/jniltinho/llama-model/releases)
+[![Release](https://img.shields.io/github/v/release/jniltinho/llama-model?color=blue)](https://github.com/jniltinho/llama-model/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Manage the local **GGUF model store** and the **llama-server** systemd service — one static Go binary, no Ollama daemon required.
